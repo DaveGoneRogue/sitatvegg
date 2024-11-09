@@ -1,3 +1,10 @@
+/* Reset some basic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -20,18 +27,23 @@ body {
 
 h1 {
     text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
 }
 
+/* Form styling */
 #quoteForm {
     display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
-#quoteInput {
-    flex: 1;
+#quoteInput,
+#authorInput {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px;
 }
 
 button {
@@ -40,36 +52,50 @@ button {
     border-radius: 4px;
     background-color: #007bff;
     color: #fff;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
+/* Quotes list styling */
 #quotesList {
     margin-top: 20px;
 }
 
 .quote-item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 5px;
     padding: 10px;
     border-bottom: 1px solid #eee;
 }
 
 .quote-text {
-    flex: 1;
+    font-size: 18px;
+    color: #333;
+    font-style: italic;
+}
+
+.quote-author {
+    font-size: 14px;
+    color: #555;
+    text-align: right;
 }
 
 .vote-btn {
+    align-self: flex-end;
     background-color: #28a745;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     padding: 5px 10px;
+    font-size: 14px;
+    transition: background-color 0.2s;
 }
 
 .vote-btn:hover {
