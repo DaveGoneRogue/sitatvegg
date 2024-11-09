@@ -1,0 +1,17 @@
+[
+  {
+    "text": "This is an example quote.",
+    "author": "John Doe",
+    "votes": 10
+  },
+  {
+    "text": "Another memorable quote.",
+    "author": "Jane Smith",
+    "votes": 6
+  },
+  {
+    "text": "Test",
+    "author": "Person1",
+    "votes": 5
+  }
+]
